@@ -1,3 +1,3 @@
 # WebTekOvinger
 
-# ** Utvikler gutta er på jobb, sier vi.**
+# ** Utviklergutta er på jobb, sier vi.**
