@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .card {
+        height: 300px;
+        width: 200px;
+        border: 1px solid black;
+        border-radius: 4%;
+        display: grid;
+        grid-template-columns: 15% 70% 15%;
+    }
+
+    .middle{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 50px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .left{
+        padding: 11px;
+        font-size: 23px;
+    }
+
+    .right{
+        padding: 11px;
+        font-size: 23px;
+        transform: rotate(180deg);
+    }
+
+    .left > div:first-child,
+    .right > div:first-child{
+        padding-left: 2px;
+    }
+
+    .middle > div:nth-child(5),
+    .middle > div:nth-child(6){
+        transform: scaleY(-1);
+    }
+
+    
+</style>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="left">
+                <div>6</div>
+                <div>&clubs;</div> 
+            </div>
+            <div class="middle">
+                <div>&clubs;</div>
+                <div>&clubs;</div>
+                <div>&clubs;</div>
+                <div>&clubs;</div>
+                <div>&clubs;</div>
+                <div>&clubs;</div>
+            </div>
+            <div class="right">
+                <div>6</div>
+                <div>&clubs;</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
