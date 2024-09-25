@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>searchbar</title>
 
+    <style>
+
+        .container {
+            width: 500px;
+            background-color: wheat;
+            margin: 40px;
+            padding: 10px;
+        }
+
+        .search-bar{
+            width: 33%;
+            height: 40px;
+            border: 3px solid red;
+            border-radius: 15px;
+            transition: linear 0.2s;
+        }
+
+        #search-field:focus {
+            width: 100%;
+            border-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <body> 
+        <div class="container">
+          <input type="search" 
+                class="search-bar" 
+                id="search-field"
+                placeholder="Search..."/>
+        </div>
+    </body>
+  
+</body>
+</html>
