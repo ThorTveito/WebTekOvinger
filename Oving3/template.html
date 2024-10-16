@@ -3,68 +3,181 @@
 <head>
 
 
-<style>
+  <style>
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-}
-
-header {
-  background: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 10px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.intro {
-  text-align: center;
-  padding: 40px;
-  background: #f4f4f4;
-}
-
-.features {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
-}
-
-.feature-item {
-  background: #fff;
-  padding: 20px;
-  border: 1px solid #ddd;
-  width: 30%;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #333;
-  color: #fff;
-}
-
-</style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+    
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    .intro {
+      text-align: center;
+      padding: 40px;
+      background: #f4f4f4;
+    }
+    
+    .features {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+      flex-direction: row;
+    }
+    
+    .feature-item {
+      background: #fff;
+      padding: 20px;
+      border: 1px solid #ddd;
+      width: 30%;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: #fff;
+    }
+    
+    img {
+      height: 0.3fr;
+      width: 100%;
+    }
+        
+    @media screen and (max-width: 768px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .feature-item {
+        width: 80%;
+        margin-bottom: 20px;
+      }
+    
+      header {
+        padding: 10px;
+      }
+    
+      .intro {
+        padding: 20px;
+      }
+    }
+    
+    
+    @media screen and (max-width: 600px) {
+      header {
+        padding: 15px;
+      }
+    
+      nav ul li {
+        display: block;
+        margin: 5px 0;
+      }
+    
+      .feature-item {
+        width: 90%;
+      }
+    
+      .intro h2 {
+        font-size: 1.5rem;
+      }
+    
+      .intro p {
+        font-size: 1rem;
+      }
+    }
+    
+    
+    @media screen and (max-width: 480px) {
+      .features {
+        padding: 10px;
+      }
+    
+      .intro h2 {
+        font-size: 1.3rem;
+      }
+    
+      .intro p {
+        font-size: 0.9rem;
+      }
+      
+      footer {
+        padding: 15px;
+      }
+    }
+    
+    
+    @media screen and (max-width: 375px) {
+      .feature-item {
+        padding: 15px;
+      }
+    
+      .intro h2 {
+        font-size: 1.2rem;
+      }
+    
+      .intro p {
+        font-size: 0.8rem;
+      }
+    
+      nav ul li {
+        margin: 3px 0;
+      }
+    }
+    
+    
+    @media screen and (max-width: 320px) {
+      .feature-item {
+        padding: 10px;
+      }
+    
+      .intro h2 {
+        font-size: 1.1rem;
+      }
+    
+      .intro p {
+        font-size: 0.7rem;
+      }
+    
+      header h1 {
+        font-size: 1.5rem;
+      }
+    
+      footer {
+        padding: 10px;
+        font-size: 0.8rem;
+      }
+    }
+    
+    </style>
+    
 
 </head>
 <body>
@@ -87,15 +200,18 @@ footer {
     <section class="features">
       <div class="feature-item">
         <img src="images\faucet.jpg" id="faucet">
-        <p>Description of feature 1.</p>
+        <p>This faucet is designed for modern kitchens, offering both style and functionality.</p>
+        <p>It features a sleek design and easy-to-use controls for a seamless experience.</p>
       </div>
       <div class="feature-item">
         <img src="images\fridge.png" id ="fridge">
-        <p>Description of feature 2.</p>
+        <p>This fridge offers ample storage space and energy-efficient cooling.</p>
+        <p>Its modern design fits seamlessly into any kitchen decor.</p>
       </div>
       <div class="feature-item">
         <img src="images\stovetop.jpg" id="stovetop">
-        <p>Description of feature 3.</p>
+        <p>This stovetop provides precise temperature control for all your cooking needs.</p>
+        <p>Its sleek design and durable materials ensure long-lasting performance.</p>
       </div>
     </section>
   </main>
