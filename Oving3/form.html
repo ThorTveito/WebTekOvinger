@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+        }
+
+        form > input {
+            margin: 10px 0px 10px 0px;
+        }
+        
+       
+
+    
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>User Registration</h1>
+        <form action="">
+            
+            <label for="name">First name:</label>
+            <input type="text" id="name"  placeholder="Ola" required> 
+
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" placeholder="Nordmann" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="olanordmann@epost.no" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" minlength="8" maxlength="28" required>
+            
+            <label for="phonenum">Phonenumber:</label>
+            <input type="tel" id="phonenum" pattern="\(\d{3}\) \d{3}-\d{4}" placeholder="(123) 456-7890" required>
+
+            <label for="birthdate">Birth-date:</label>
+            <input type="date" id="birthdate" max="2006-10-16" min="1906-10-16"> 
+
+            <label for="country">Nationality:</label>
+            <select name="country" id="country">
+                <option value="" selected disabled="disabled"> - Select -</option>
+                <option value="norway">Norway</option>
+                <option value="usa">United States of America</option>
+                <option value="spain">Spain</option>
+            </select>
+            
+            <p id="gendertxt">Gender:</p>
+        <div>
+            <label for="Male">Male</label>
+            <input type="radio" name="gender" id="male" required>
+         </div>
+         <div>
+             <label for="female">Female</label>
+             <input type="radio" name="gender" id="female">
+         </div>
+         <div>
+            <label for="other">Other</label>
+            <input type="radio" name="gender" id="other">
+         </div>
+
+        <p>Hobbies:</p>
+        <div>
+         <label for="sports">Sports</label>
+         <input type="checkbox" name="interest" id="sports" required>
+        </div>
+        <div>
+            <label for="reading">Reading</label>
+            <input type="checkbox" name="interest" id="reading">
+        </div>
+        <div>
+            <label for="travel">Traveling</label>
+            <input type="checkbox" name="interest" id="travel">
+        </div>
+        <div>
+            <label for="coding">Coding</label>
+         <input type="checkbox" name="interest" id="coding">
+        </div>
+
+        <br>
+
+        <label for="comment">Comments:</label>
+        <textarea name="comment" id="comment" style="height: 100px; resize: none;"></textarea>
+
+        <label for="satisfied">Satisfaction</label>
+        <input type="range" id="satisfied" min="0" max="10">
+
+        <label for="upload">Upload files:</label>
+        <input type="file" id="upload">
+         <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+</html>
