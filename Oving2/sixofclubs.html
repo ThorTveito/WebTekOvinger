@@ -4,50 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .card {
+            margin: 0 auto;
+            height: 300px;
+            width: 200px;
+            border: 1px solid black;
+            border-radius: 4%;
+            display: grid;
+            grid-template-columns: 15% 70% 15%;
+        }
+    
+        .middle{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            font-size: 50px;
+            justify-items: center;
+            align-items: center;
+        }
+    
+        .left{
+            padding: 11px;
+            font-size: 23px;
+        }
+    
+        .right{
+            padding: 11px;
+            font-size: 23px;
+            transform: rotate(180deg);
+        }
+    
+        .left > div:first-child,
+        .right > div:first-child{
+            padding-left: 2px;
+        }
+    
+        .middle > div:nth-child(5),
+        .middle > div:nth-child(6){
+            transform: scaleY(-1);
+        }
+    
+        
+    </style>
 </head>
 
-<style>
-    .card {
-        margin: 0 auto;
-        height: 300px;
-        width: 200px;
-        border: 1px solid black;
-        border-radius: 4%;
-        display: grid;
-        grid-template-columns: 15% 70% 15%;
-    }
-
-    .middle{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        font-size: 50px;
-        justify-items: center;
-        align-items: center;
-    }
-
-    .left{
-        padding: 11px;
-        font-size: 23px;
-    }
-
-    .right{
-        padding: 11px;
-        font-size: 23px;
-        transform: rotate(180deg);
-    }
-
-    .left > div:first-child,
-    .right > div:first-child{
-        padding-left: 2px;
-    }
-
-    .middle > div:nth-child(5),
-    .middle > div:nth-child(6){
-        transform: scaleY(-1);
-    }
-
-    
-</style>
 
 <body>
     <div class="container">
