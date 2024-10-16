@@ -7,6 +7,11 @@
 
     <style>
 
+        body {
+            margin: 0;
+            background-color: wheat;
+        }
+
         .form-container {
             display: flex;
             flex-direction: column;
@@ -17,12 +22,29 @@
             display: flex;
             flex-direction: column;
             width: 200px;
+            font-size: 18px;
         }
 
         form > input {
             margin: 10px 0px 10px 0px;
+            height: 20px;
+            border-radius: 5px;
         }
-        
+
+        button {
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        button:first-of-type {
+            background-color: lightgreen;
+        }
+
+        button:last-of-type {
+            background-color: lightcoral;
+        }
+
+
        
 
     
@@ -59,7 +81,7 @@
                 <option value="spain">Spain</option>
             </select>
             
-            <p id="gendertxt">Gender:</p>
+            <p style="text-decoration: underline;">Gender:</p>
         <div>
             <label for="Male">Male</label>
             <input type="radio" name="gender" id="male" required>
@@ -73,7 +95,7 @@
             <input type="radio" name="gender" id="other">
          </div>
 
-        <p>Hobbies:</p>
+        <p style="text-decoration: underline;">Hobbies:</p>
         <div>
          <label for="sports">Sports</label>
          <input type="checkbox" name="interest" id="sports" required>
