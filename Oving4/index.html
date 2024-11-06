@@ -26,6 +26,7 @@
         text-align: center;
       }
     </style>
+    
   </head>
   <body>
 
@@ -33,9 +34,9 @@
 
     <h2>Task  1.5</h2>
     <div class='buttons'>
-      <button>Display: none </button>
-      <button>Visibility: hidden</button>
-      <button>Reset</button>
+      <button id="btnDisplay">Display: none </button>
+      <button id="btnVisibility">Visibility: hidden</button>
+      <button id="btnReset">Reset</button>
     </div>
     <div class='box' id='magic'> 1 </div>
     <div class='box'> 2 </div>
@@ -43,6 +44,10 @@
     <h2>Task  1.6</h2>
     <ul id='tech'>
     </ul>
+
+    <script src="script.js"></script>
+    <!-- Putter script src elementet etter html-en slik at html elementene bli initialisert
+    Ellers så eksisterer ikke elementene og javascript kan ikke finne elementet og gjøre endringer. -->
 
   </body>
 </html>
